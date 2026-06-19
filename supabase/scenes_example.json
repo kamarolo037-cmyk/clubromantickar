@@ -1,0 +1,55 @@
+[
+  {
+    "id": "scene_008",
+    "chapter": 2,
+    "sort_order": 1,
+    "background": "sochi_cafe",
+    "characters": [
+      { "id": "vladislava", "position": "left", "emotion": "happy" },
+      { "id": "kartush", "position": "right", "emotion": "neutral" }
+    ],
+    "speaker": "vladislava",
+    "dialogue": "Картуш, ты серьёзно думаешь, что это хорошая идея?",
+    "choices": [
+      {
+        "text": "«Лучшая идея этого лета»",
+        "next_scene": "scene_009a",
+        "effects": { "vladislava": 2, "kartush": 1 },
+        "set_flags": {}
+      },
+      {
+        "text": "«Я вообще не понимаю, что происходит»",
+        "next_scene": "scene_009b",
+        "effects": { "vladislava": 0 },
+        "set_flags": {}
+      }
+    ],
+    "next_scene": null
+  },
+  {
+    "id": "scene_vovka_01",
+    "chapter": 1,
+    "sort_order": 8,
+    "background": "sochi_beach",
+    "characters": [
+      { "id": "vovka", "position": "center", "emotion": "neutral" }
+    ],
+    "speaker": "narrator",
+    "dialogue": "Из-за угла выбежал большой рыжий пёс. Сел. Посмотрел на тебя так, будто уже знает всё, что произойдёт.",
+    "choices": [
+      {
+        "text": "Потрепать его за ухом",
+        "next_scene": "scene_vovka_02a",
+        "effects": { "vovka": 3 },
+        "set_flags": { "met_vovka": true }
+      },
+      {
+        "text": "Осторожно обойти",
+        "next_scene": "scene_vovka_02b",
+        "effects": { "vovka": 0 },
+        "set_flags": { "met_vovka": true }
+      }
+    ],
+    "next_scene": null
+  }
+]
